@@ -1,0 +1,200 @@
+body {
+  font-family: "Lato";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.head a:hover {
+  background-color: #f16d7f;
+}
+.head a:focus {
+  background-color: #ca4141;
+}
+.head a:after {
+  color: #636363;
+}
+.head a:active {
+  color: #636363;
+}
+.head a:visited {
+  color: #636363;
+}
+header {
+  background-color: #222222;
+}
+header .container {
+  box-sizing: border-box;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+.iconSearch {
+  margin-left: 40px;
+}
+.iconUser {
+  margin-left: 25px;
+  margin-right: 42px;
+}
+@media (max-width: 768px) {
+  .iconBasket,
+  .iconUser {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1140px;
+    margin: auto;
+  }
+}
+.head {
+  background-color: #f8f3f4;
+}
+.head .container {
+  box-sizing: border-box;
+  height: 148px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.headLeft {
+  text-align: center;
+  margin: 24px auto 32px auto;
+  color: #f16d7f;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.headRigth {
+  text-align: center;
+
+  margin: 0 auto 46px auto;
+  color: #636363;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.headRigth span {
+  color: #f16d7f;
+}
+@media (min-width: 768px) {
+  .head .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head .container div {
+    padding: 0;
+    margin: 0;
+  }
+}
+.filter {
+  height: 82px;
+}
+
+@media (min-width: 1600px) {
+  .filter {
+    height: 132px;
+  }
+  .filter .container {
+    position: relative;
+  }
+  .filter .rigthFilter {
+    position: absolute;
+    left: 40%;
+  }
+}
+.filter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+.filter .rigthFilter {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6f6e6e;
+}
+.filter .rigthFilter div:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.assortmen .container {
+  padding: 0 15px 0 15px;
+}
+
+.assortmen .cards .name {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.assortmen .cards .description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+}
+.assortmen .cards .price {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+.cards img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .assortmen .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+}
+@media (min-width: 1600px) {
+  .assortmen .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.page {
+  height: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1600px) {
+  .page {
+    height: 188px;
+  }
+}
+.page ul {
+  padding-left: 0;
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+  border: #ebebeb solid 1px;
+}
+
+.page li {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+.page a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c4c4c4;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
